@@ -1,0 +1,156 @@
+#include"Motor.h"
+#define Dipin 4
+#define Baud 115200
+int v1 = 60;
+int v2 = 60;
+int v3 = 90;
+int v4 = 80;
+int v5 = 20;
+int v6 = 25; //inwheel
+int v7 = 35;
+
+void setup() {
+  
+  
+  // put your setup code here, to run once:
+  Motor.begin(Baud, Dipin, &Serial2);
+
+  delay(5000);
+  Motor.turnWheel(1, LEFT, v1);
+  Motor.turnWheel(2, RIGHT, v2);
+  delay(1460);
+
+  Motor.turnWheel(1, LEFT, 0);
+  Motor.turnWheel(2, RIGHT, 0);
+  delay(2000);
+
+  Motor.turnWheel(1, LEFT, 0);
+  Motor.turnWheel(2, RIGHT, v3);
+  delay(2000);
+
+  Motor.turnWheel(1, LEFT, 0);
+  Motor.turnWheel(2, RIGHT, 0);
+  delay(2000);
+
+  Motor.turnWheel(1, RIGHT, v1);
+  Motor.turnWheel(2, LEFT, v2);
+  delay(2500);
+
+  Motor.turnWheel(1, LEFT, 0);
+  Motor.turnWheel(2, RIGHT, 0);
+  delay(1000);
+
+
+  Motor.turnWheel(1, LEFT, v1);
+  Motor.turnWheel(2, RIGHT, v2);
+  delay(2200);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, LEFT, v4);
+  Motor.turnWheel(2, RIGHT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, LEFT, v1);
+  Motor.turnWheel(2, RIGHT, v2);
+  delay(200);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, LEFT, v1);
+  Motor.turnWheel(2, RIGHT, v2);
+  delay(1250);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, LEFT, v1);
+  Motor.turnWheel(2, LEFT, v2);
+  delay(550);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, RIGHT, v1);
+  Motor.turnWheel(2, RIGHT, v2);
+  delay(550);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, RIGHT, v1);
+  Motor.turnWheel(2, LEFT, v2);
+  delay(1200);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, LEFT, 0);
+  Motor.turnWheel(2, RIGHT, v3);
+  delay(2000);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(1000);
+
+  Motor.turnWheel(1, LEFT, v1);
+  Motor.turnWheel(2, RIGHT, v2);
+  delay(1100);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(500);
+
+  Motor.turnWheel(1, LEFT, v5);
+  Motor.turnWheel(2, RIGHT, 0);
+  delay(2000);
+
+  Motor.turnWheel(1, LEFT, v6);
+  Motor.turnWheel(2, RIGHT, v1);
+  delay(3300);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(500);
+
+  Motor.turnWheel(1, LEFT, 0);
+  Motor.turnWheel(2, RIGHT, v7);
+  delay(1000);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(500);
+
+  Motor.turnWheel(1, LEFT, 0);
+  Motor.turnWheel(2, RIGHT, v7);
+  delay(1000);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(500);
+
+  Motor.turnWheel(1, LEFT, v1);
+  Motor.turnWheel(2, RIGHT, v2);
+  delay(1900);
+
+  Motor.turnWheel(1, RIGHT, 0);
+  Motor.turnWheel(2, LEFT, 0);
+  delay(500);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
